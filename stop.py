@@ -2,15 +2,18 @@
 import os
 
 # Path to bin folder
-authorpath = "~/Desktop/aem/author/crx-quickstart/bin"
-publishpath = "~/Desktop/aem/publish/crx-quickstart/bin"
-activemqpath = "~/Documents/apache-activemq-5.15.1/bin"
+authorpath = os.getenv('AUTHOR_BIN_PATH')
+publishpath = os.getenv('PUBLISH_BIN_PATH')
+activemqpath = os.getenv('ACTIVEMQ_BIN_PATH')
 
 # Stop author 
+if(authorpath!='None')
 os.system("sh " + authorpath + "/stop")
 
 # Stop publisher
+if(publishpath!='None')
 os.system("sh " + publishpath + "/stop")
 
 # Stop activeMQ
+if(activemqpath!='None')
 os.system( activemqpath + "/activemq stop")

@@ -2,9 +2,9 @@
 import os
 
 # Path to bin folder
-authorpath = "~/Desktop/aem/author/crx-quickstart/bin"
-publishpath = "~/Desktop/aem/publish/crx-quickstart/bin"
-activemqpath = "~/Documents/apache-activemq-5.15.1/bin"
+authorpath = os.getenv('KEY_THAT_MIGHT_EXIST')
+publishpath = os.getenv('KEY_THAT_MIGHT_EXIST')
+activemqpath = os.getenv('KEY_THAT_MIGHT_EXIST')
 
 # Start author 
 os.system("sh " + authorpath + "/start")
