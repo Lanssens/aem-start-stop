@@ -2,9 +2,9 @@
 import os
 
 # Path to bin folder
-authorpath = os.getenv('KEY_THAT_MIGHT_EXIST')
-publishpath = os.getenv('KEY_THAT_MIGHT_EXIST')
-activemqpath = os.getenv('KEY_THAT_MIGHT_EXIST')
+authorpath = os.getenv('AUTHOR_BIN_PATH')
+publishpath = os.getenv('PUBLISH_BIN_PATH')
+activemqpath = os.getenv('ACTIVEMQ_BIN_PATH')
 
 # Start author 
 os.system("sh " + authorpath + "/start")
