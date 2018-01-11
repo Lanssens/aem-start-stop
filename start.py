@@ -8,12 +8,14 @@ activemqpath = os.getenv('ACTIVEMQ_BIN_PATH')
 
 # Start author 
 if(authorpath!='None')
-os.system("sh " + authorpath + "/start")
+	os.system("sh " + authorpath + "/start")
 
 # Start publisher
 if(publishpath!='None')
-os.system("sh " + publishpath + "/start")
+	os.system("sh " + publishpath + "/start")
 
 # Start activeMQ
 if(activemqpath!='None')
-os.system( activemqpath + "/activemq start")
+	os.system( activemqpath + "/activemq start")
+
+print 'Done starting services'
