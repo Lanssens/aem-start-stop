@@ -8,12 +8,14 @@ activemqpath = os.getenv('ACTIVEMQ_BIN_PATH')
 
 # Stop author 
 if(authorpath!='None')
-os.system("sh " + authorpath + "/stop")
+	os.system("sh " + authorpath + "/stop")
 
 # Stop publisher
 if(publishpath!='None')
-os.system("sh " + publishpath + "/stop")
+	os.system("sh " + publishpath + "/stop")
 
 # Stop activeMQ
 if(activemqpath!='None')
-os.system( activemqpath + "/activemq stop")
+	os.system( activemqpath + "/activemq stop")
+
+print 'Stopped services'
