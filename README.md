@@ -18,8 +18,9 @@ The scripts will pick up the environment variables and will start the services t
 
 Make aliases for start.py and stop.py to make your life easier:
 	
-	alias startaem='python <path_to_start.py>' 
-	alias stopaem='python <path_to_stop.py>' 
+	alias startaem='python <repo/aem/start.py>' 
+	alias stopaem='python <repo/aem/stop.py>' 
+	alias openerrorlogs='python <repo/logs/openterminalwindows.py>'
 		
 Refresh the shell environment for everything to work: 
 		
@@ -30,4 +31,6 @@ Finally:
 	startaem
 		...
 	stopaem
+		...	
+	openerrorlogs
 		...
