@@ -1,5 +1,5 @@
 # aem-start-stop
-Python scripts that start and stop AEM ( and my project specific services )
+Python scripts that starts and stops AEM ( and my project specific services )
 
 ## Installation
 You need to have python2 installed
