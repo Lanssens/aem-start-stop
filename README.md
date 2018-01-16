@@ -12,6 +12,7 @@ Set the following environment variables in .bash_profile:
 
 	export AUTHOR_PATH=<author_path> 
 	export PUBLISH_PATH=<publish_path>
+	export REPO_PATH=<repo_path>
 	(export ACTIVEMQ_PATH=<activemq_path>) --> optional
 
 The scripts will pick up the environment variables and will start the services that have valid paths.

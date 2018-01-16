@@ -4,8 +4,10 @@ import tail
 import os
 import time
 
-os.system("python terminal.py --wait python followerrorlog.py author")
+repopath = os.getenv('REPO_PATH')
+ 
+os.system("python " + repopath + "/logs/terminal.py --wait python " + repopath + "/logs/followerrorlog.py author")
 
 time.sleep(1)
 
-os.system("python terminal.py --wait python followerrorlog.py publish")
+os.system("python " + repopath + "/logs/terminal.py --wait python " + repopath + "/logs/followerrorlog.py publish")

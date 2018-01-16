@@ -12,8 +12,6 @@ def print_line(txt):
     ''' Prints received text '''
     print(txt),
 
-print(sys.argv[1])    
-
 if (sys.argv[1] and sys.argv[1] == 'author' and authorpath is not None):
 	print("Opened author error log")
 
