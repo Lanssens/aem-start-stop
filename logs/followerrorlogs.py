@@ -16,8 +16,9 @@ def print_line(txt):
     print(txt)
 
 if authorpath!="None":
-
-	print(authorpath)
+	os.system("python terminal.py --wait ls -la")
+	os.system("python terminal.py --wait ls -la")
+	
 	concatted_path = authorpath + "/crx-quickstart/logs/error.log"
 	print(concatted_path)
 	t = tail.Tail(os.path.expanduser(concatted_path)) 
