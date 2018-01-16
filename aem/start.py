@@ -2,9 +2,9 @@
 import os
 
 # Path to bin folder
-authorpath = os.getenv('AUTHOR_BIN_PATH')
-publishpath = os.getenv('PUBLISH_BIN_PATH')
-activemqpath = os.getenv('ACTIVEMQ_BIN_PATH')
+authorpath = os.getenv('AUTHOR_PATH')
+publishpath = os.getenv('PUBLISH_PATH')
+activemqpath = os.getenv('ACTIVEMQ_PATH')
 
 # Start author 
 if authorpath!="None":

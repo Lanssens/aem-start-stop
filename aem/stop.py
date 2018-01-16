@@ -8,14 +8,14 @@ activemqpath = os.getenv('ACTIVEMQ_PATH')
 
 # Stop author 
 if authorpath!="None":
-	os.system("sh " + authorpath + "/stop")
+	os.system("sh " + authorpath + "/crx-quickstart/bin/stop")
 
 # Stop publisher
 if publishpath!="None": 
-	os.system("sh " + publishpath + "/stop")
+	os.system("sh " + publishpath + "/crx-quickstart/bin/stop")
 
 # Stop activeMQ
 if activemqpath!="None":
-	os.system( activemqpath + "/activemq stop")
+	os.system( activemqpath + "/bin/activemq stop")
 
 print 'Stopped services'

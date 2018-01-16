@@ -10,9 +10,9 @@ You need to have python2 installed
 
 Set the following environment variables in .bash_profile: 
 
-	export AUTHOR_BIN_PATH=<author_bin_path> 
-	export PUBLISH_BIN_PATH=<publish_bin_path>
-	(export ACTIVEMQ_BIN_PATH=<activemq_bin_path>) --> optional
+	export AUTHOR_PATH=<author_path> 
+	export PUBLISH_PATH=<publish_path>
+	(export ACTIVEMQ_PATH=<activemq_path>) --> optional
 
 The scripts will pick up the environment variables and will start the services that have valid paths.
 
