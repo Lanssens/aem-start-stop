@@ -1,5 +1,5 @@
 # aem-start-stop
-Python scripts that starts and stops AEM ( and my project specific services )
+Python scripts that starts and stops AEM. You can also open both the error logs of publisher and author with a single command.
 
 ## Installation
 You need to have python2 installed
@@ -17,13 +17,13 @@ Set the following environment variables in .bash_profile:
 
 The scripts will pick up the environment variables and will start the services that have valid paths.
 
-Make aliases for start.py and stop.py to make your life easier:
+Make aliases for start.py, stop.py and openterminalwindows.py to make your life easier. Put them in .bash_profile/.zshrc/...:
 	
 	alias startaem='python <repo/aem/start.py>' 
 	alias stopaem='python <repo/aem/stop.py>' 
 	alias openerrorlogs='python <repo/logs/openterminalwindows.py>'
 		
-Refresh the shell environment for everything to work: 
+Refresh your shell environment for everything to work: 
 		
 	source ~/.bash_profile
 
