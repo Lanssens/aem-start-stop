@@ -10,7 +10,7 @@ publishpath = os.getenv('PUBLISH_PATH')
 
 def print_line(txt):
     ''' Prints received text '''
-    print(txt)
+    print(txt),
 
 print(sys.argv[1])    
 
